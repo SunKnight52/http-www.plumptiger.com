@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Microsoft YaHei";
+}
+    a {
+        text-decoration: none;
+    }
+    ul,li {
+        list-style: none;
+    }
+    .hide {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+    .clearfix:after {
+  display: block;
+  content: "\200B";
+  clear: both;
+  height: 0;
+}
+
+  html {
+   font-size: 625%;
+}
+@media screen and (min-width:300px) and (max-width:329px) and (orientation:portrait) {
+    html { font-size: 560%; }
+}
+@media screen and (min-width:330px) and (max-width:359px) and (orientation:portrait) {
+    html { font-size: 600%; }
+}
+@media screen and (min-width:360px) and (max-width:375px) and (orientation:portrait) {
+    html { font-size: 625%; }
+}  
+  /* 1rem=100px */
+ @media screen and (min-width:376px) and (max-width:383px) and (orientation:portrait) {
+    html { font-size: 652.4%; }
+}
+@media screen and (min-width:384px) and (max-width:399px) and (orientation:portrait) {
+    html { font-size: 670%; }
+}
+@media screen and (min-width:400px) and (max-width:413px) and (orientation:portrait) {
+    html { font-size: 701.25%; }
+}
+@media screen and (min-width:414px) and (max-width:431px) and (orientation:portrait){
+    html { font-size: 728.6%; }
+}
+@media screen and (min-width:432px) and (max-width:479px) and (orientation:portrait){
+    html { font-size: 743.75%; }
+}  
+@media screen and (min-width:480px) and (max-width:768px) and (orientation:portrait){
+    html { font-size: 1250%; }
+} 
+/* 头部 */
+#container-fluid {
+  width: 100%;
+}
+#container-fluid .head {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#container-fluid .head > div {
+  width: 100%;
+  height: 100px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#container-fluid .head > div .left {
+  margin-top: 20px;
+}
+#container-fluid .head > div .left > .visible-xs-block {
+  display: none;
+}
+#container-fluid .head > div #menu {
+  width: 710px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+}
+#container-fluid .head > div #menu li {
+  height: 30px;
+}
+#container-fluid .head > div #menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+#container-fluid .head > div #menu .active {
+  border-bottom: 2px #0082df solid;
+}
+#container-fluid .head > div #menu .active a {
+  color: #0082df;
+}
+#container-fluid .head > div #menu li:hover {
+  border-bottom: 2px #0082df solid;
+}
+#container-fluid .head > div #menu li:hover a {
+  color: #0082df;
+}
+
+
+
+/* 小屏幕（手机，最大等于 768px） */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  #container-fluid .head > div {
+    width: 100%;
+    padding: 0 0.4rem;
+    height: 60px;
+    margin: 0 auto;
+  }
+  #container-fluid .head > div .left {
+    margin-top: 10px;
+  }
+  #container-fluid .head > div > img {
+    float: right;
+    width: 28px;
+    margin-top: 10px;
+  }
+  #container-fluid .head > div #menu {
+    position: absolute;
+    display: none;
+    top: 60px;
+    right: 0;
+    width: 1.5rem;
+    height: initial;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-right: 0;
+  }
+  #container-fluid .head > div #menu > li {
+    padding-right: 0;
+    width: 100%;
+    height: 49px;
+    text-align: center;
+    border-bottom: 1px solid;
+    border-color: #cccccc;
+  }
+  #container-fluid .head > div #menu > li > a {
+    line-height: 49px;
+    color: #fff;
+  }
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #container-fluid .head > div #menu {
+    width: 566px;
+  }
+}
+/* 大屏幕（平板，最大等于 1200px） */

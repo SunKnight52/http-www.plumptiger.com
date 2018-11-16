@@ -1,0 +1,272 @@
+#container-fluid {
+    width: 100%;
+    .head {
+        position: fixed;
+        top: 0;
+        width: 100%;  
+        z-index: 10; 
+        background-color: rgba(0,0,0,0.6); 
+        >div {
+            width: 100%;
+            height: 100px;
+            max-width: 1100px;
+            margin: 0 auto;
+            .left{
+            margin-top: 20px;    
+            }
+            #menu {
+                width: 710px;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 30px;
+                li{
+                    height: 30px;
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                   
+                }
+                .active {
+                    border-bottom: 2px #0082df solid;
+                    a {
+                        color: #0082df
+                    }
+                }
+                li:hover {
+                    border-bottom: 2px #0082df solid;
+                    a {
+                        color: #0082df
+                    }
+                }
+            }
+        }
+    }
+    .about_head{
+        width: 100%;
+        height: 498px;
+        background: url("../image/gywm_bj.png") no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        .head_main {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1100px;
+                color: #fffefe;
+            font-size: 36px;
+            margin-top: 60px;
+            p {
+                font-size: 44px;
+            }
+        }
+    }
+    .about_usage {
+        width: 100%;
+        background-color: #f3f3f3;
+        .usage {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            ul {
+                width: 100%;
+                height: 100px;
+                li {
+                    float: left;
+                    height: 100px;
+                    width: 50%;
+                    text-align: center;
+                    line-height: 100px;
+                    a {
+                        display: inline-block;
+                        text-decoration: none;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 32px;
+                        color: #666;
+                    }
+                }
+                .active {
+                    background-color: #fff;
+         
+                }
+            }
+        }
+    }
+    .about_main {
+        width: 100%;
+        min-height: 620px;
+        .tab-content {
+            width: 100%;
+            max-width: 1100px;
+            height: 100%;
+            margin: 0 auto;
+            #home {
+                  height: 100%; 
+             >div {
+                    padding-top: 100px;
+                    .left {
+                   width: 38%;
+                   img{
+                       width: 100%;
+                   } 
+                }
+                .right {
+                   width: 58%;
+                   padding-right: 30px;
+                   height: 100%;
+                   padding-top: 50px;
+                   font-size: 16px;
+                   color: #656565;
+                   .about_us {
+                       >div {
+                           margin-bottom: 24px;
+                           font-size: 16px;
+                           color: #656565;
+                       }
+                       >p {
+                           margin: 0;
+                           color: #0a84e3;
+                           font-size: 20px;
+                           margin-bottom: 40px;
+                       }
+                   }
+
+                }
+             }
+            } 
+             #profile {
+                  height: 100%; 
+             >div {
+                    padding-top: 100px;
+                    .left {
+                   width: 38%;
+                   img{
+                       width: 100%;
+                   } 
+                }
+                .right {
+                   width: 58%;
+                   padding-right: 30px;
+                   height: 100%;
+                   padding-top: 110px;
+                   font-size: 16px;
+                   color: #656565;
+                   .about_us {
+                       >div {
+                           margin-bottom: 24px;
+                           font-size: 16px;
+                           color: #656565;
+                       }
+                       >p {
+                           margin: 0;
+                           color: #0a84e3;
+                           font-size: 20px;
+                           margin-bottom: 40px;
+                       }
+                       
+                   }
+
+                }
+             }
+            } 
+            
+         }
+    }
+     .about_foot {
+               
+                height: 296px;
+                width: 100%;
+                background-color: #252432;
+                .foot_main {
+                    max-width: 1100px;
+                    margin: 0 auto;
+                    .foot_head {
+                        height: 100px;
+                        border-bottom: 1px #0082df solid;
+                        .left {
+                            color:#fff;
+                            font-size: 16px;
+                            height: 100px;
+                            padding-top: 54px;
+                            a {
+                                text-decoration: none;
+                                color:#fff;
+                                font-size: 16px
+                            }
+                            a:hover{
+                                color:#0082df
+                            }
+                        }
+                        .right {
+                            padding-top: 54px;
+                            height: 100px;
+                            a{
+                                display: inline-block;
+                                
+                            }
+                            a:first-of-type {
+                                margin-right: 18px;
+                            }
+                        }
+                    }
+                    .foot_f {
+                        .left {
+                            padding-top: 38px;
+                            font-size: 16px;
+                            color: #fff;
+                            >p:nth-of-type(3) {
+                                font-size: 24px;
+                                color: #0082df;
+                            }
+                        }
+                        .right {
+                            padding-top: 26px;
+                        }
+                    }
+                }
+            }
+  
+}    
+  .weix {
+        top: 30%;
+        .modal-dialog {
+            width: 524px;
+            .modal-content {
+                height: 332px;
+                overflow: hidden;
+                border-radius: 10px;
+                .modal-header{
+                    background-color: #0082df;
+                    font-size: 26px;
+                    color: #fff;
+                    height: 62px;
+                    line-height: 31px;
+                    text-align: center;
+                    >button {
+                        opacity: 1;
+                    }
+                }
+                .modal-body {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 270px;
+                    >div {
+                        text-align: center;
+                        >img {
+
+                        }
+                        >p {
+                            font-size: 18px;
+                            color: #999;
+                        }
+                    }
+                }
+            }
+        }
+    }

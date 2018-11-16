@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="no-js">
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/animate.min.css">
+    <link rel="stylesheet" href="./assets/swiper.min.css">
+    <link rel="stylesheet" href="./assets/fullpage/jquery.fullPage.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        #fp-nav ul li a.active span,
+        .fp-slidesNav ul li a.active span {
+            background: #ccc;
+            /*这里设置的是活动导航的颜色*/
+        }
+        #fp-nav ul li a span,
+        .fp-slidesNav ul li a span {
+            border: 1px solid #ccc;
+        }
+        #iconDivMain1 {
+            display: none;
+        }
+        /* #mini-btn {
+            display: none !important;
+        }
+        #iframe_company_mini_div {
+             display: none !important;
+        } */
+        html {
+            overflow: hidden !important
+        }
+    </style>
+    
+
+        
+ 
+</head>
+
+<body>
+    <div id="container-fluid">
+        <div class="head">
+            <div>
+                <div class="left">
+                    <img src="../image/logo.png" id="pxh_logo" alt="">
+                </div>
+                <ul id="menu" class="right">
+                    <li data-menuanchor="page1"><a href="../index.html#page1">首页</a></li>
+                    <li data-menuanchor="page2"><a href="../index.html#page2">超级钱包</a></li>
+                    <li data-menuanchor="page3"><a href="../index.html#page3">方案</a></li>
+                    <li data-menuanchor="page4"><a href="../index.html#page4">解决方案</a></li>
+                    <li data-menuanchor="page5"><a href="../index.html#page5">应用</a></li>
+                    <li data-menuanchor="page6"><a href="../index.html#page6">优势</a></li>
+                    <li data-menuanchor="page7"><a href="../index.html#page7">合作方案</a></li>
+                    <li data-menuanchor="page8"><a href="../index.html#page8">关于我们</a></li>
+                    <li class="full">全屏</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="consult">
+            <!-- <img src="./image/icon_gb.png" id="" alt="consult_close"><div class="online"><a href='+consultitem.online.link+'><img src="./image/icon_zx.png" alt=""><span>在线咨询</span></a></div><div class="qq"><a href='+consultitem.qq.link+'><img src="./image/icon_wxb.png" alt=""><span>QQ咨询</span></a></div><div class="weixin"><img src="./image/icon_wxb.png" alt=""><span>微信咨询</span><img src='+consultitem.weixin.ewm+' alt=""></div><div class="phone"><img src="./image/icon_zj.png" alt=""><span>'+consultitem.phone.phone+'</span>          </div> -->
+        </div>
+        <div class="consult_item">
+            <div class="item_h">
+                <img src="./image/icon_zxzx.png" alt="">
+            </div>
+            <div class="item_f">
+                在线咨询
+            </div>
+        </div>
+        <div id="fullPage">
+            <div class="section one">
+                <img data-src="./image/home_bg.png" style="width: 100%;height: 100%;position: absolute;top:0;" alt="" class="hidden-xs">
+                <img data-src="./image/shouping1.png" style="width: 100%;height: 100%;position: absolute;top:0;" alt="" class="visible-xs-inline-block">
+                <div class="one_main">
+                    <div class="wow bounceInUp" data-wow-duration="2s">
+                        <div class="main_head">
+                            全球领先的<span>区块链方案</span>解决供应商
+                        </div>
+                        <img src="./image/banner_line.png" alt="">
+                        <div class="main_foot">
+                            区块链将会是更普惠、更智能、更实时的未来金融
+                        </div>
+                    </div>
+                </div>
+                <div id="particles-js"></div>
+            </div>
+            <div class="section two">
+                <div class="img_animate">
+                    <div class="an1">
+                        <img src="./image/line1.png" alt=""><img src="./image/line1.png" alt="">
+                    </div>
+                </div>
+                <div class="img_animate">
+                    <div class="an2">
+                        <img src="./image/line2.png" alt=""><img src="./image/line2.png" alt="">
+                    </div>
+                </div>
+                <div class="img_animate">
+                    <div class="an3">
+                        <img src="./image/line3.png" alt=""><img src="./image/line3.png" alt="">
+                    </div>
+                </div>
+                <div class="two_main">
+                    <div class="main_h wow bounceInDown" data-wow-duration="2s" data-wow-delay="0.5s">
+                        <p>超级钱包</p>
+                        基于侧链技术、冷热钱包分离技术、延迟上链、私有链技术、超级钱包<br>
+                        对接技术、pin码助记词、双重加密验证等技术所创建的加密化资产钱包.
+                    </div>
+                    <div class="main_phone">
+                        <img src="./image/iphone_x_1.png" class="wow bounceInDown" data-wow-duration="2s"
+                            data-wow-delay="0.2s" alt="">
+                        <img src="./image/iphone_x_2.png" class="wow bounceInDown" data-wow-duration="2s" alt="">
+                        <img src="./image/iphone_x_3.png" class="wow bounceInDown" data-wow-duration="2s"
+                            data-wow-delay="0.5s" alt="">
+                    </div>
+                    <div class="main_shadow">
+                        <img src="./image/phone_shadow.png" class="wow fadeIn" data-wow-duration="4s" alt="">
+                    </div>
+                    <div class="main_f">
+                        <a href="#">
+                            查看详情
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="section three">
+                <img data-src="./image/fadbj.png" style="width: 100%;height: 100%;position: absolute;top:0;" alt="">
+                <div class="three_head">
+                    <p>区块链方案</p>
+                    <p>为各行业提供区块链的解决方案</p>
+                </div>
+                <div class="three_main">
+                    <ul>
+                        <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                            <img src="./image/qbbj.png" alt="">
+                            <div class="tis_h">
+                                <div>
+                                    <img src="./image/icon_qb.png" alt="">
+                                    <p>区块链钱包</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="tis_f">
+                                独立APP网页区块链钱包定制，适应区块链行业及实际落地多行业应用。
+                            </div>
+                        </li>
+                        <li class="wow fadeInLeft" data-wow-duration="1s">
+                            <img src="./image/kfbj.png" alt="">
+                            <div class="tis_h">
+                                <div>
+                                    <img src="./image/icon_kf.png" alt="">
+                                    <p>底层主链开发</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="tis_f">
+                                基于区块链技术，根据客户不同需求，可提供定制化服务。
+                            </div>
+                        </li>
+
+                        <li class="wow fadeInRight" data-wow-duration="1s">
+                            <img src="./image/zdbj.png" alt="">
+                            <div class="tis_h">
+                                <div>
+                                    <img src="./image/icon_zn.png" alt="">
+                                    <p>智能数字终端</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="tis_f">
+                                致力于为客户提供最全面、最专业的解决方案。餐饮、物流、连锁超市等，各种应用场景，一站式解决所有支付问题。
+                            </div>
+                        </li>
+                        <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+                            <img src="./image/jysbj.png" alt="">
+                            <div class="tis_h">
+                                <div>
+                                    <img src="./image/icon_jys.png" alt="">
+                                    <p>数字货币交易所开发</p>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="tis_f">
+                                定制开货币交易系统，场外交易系统及数字货币期货交易系统和分布式交易所。
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="section four">
+                <div class="four_head wow fadeInDownBig" data-wow-duration="1s">
+                    <p>配套解决方案</p>
+                    基于区块链的商用级解决方案
+                </div>
+                <div class="four_main">
+                    <ul>
+                        <li class="wow fadeInLeftBig" data-wow-duration="1s">
+                            <img src="./image/icon_lc.png" alt="">
+                            <p>区块链公司历程</p>
+                            <div>
+                                国内区块链公司成立 海外区块链公司或基金会设立 海外区块链金融牌照申请
+                            </div>
+                        </li>
+                        <li class="wow fadeInUpBig" data-wow-duration="1s">
+                            <img src="./image/icon_szzc.png" alt="">
+                            <p>数字资产</p>
+                            <div>
+                                应用于商业积分、电子券、预付卡、游戏装备、保险卡单、证券化资产等场景
+                            </div>
+                        </li>
+                        <li class="wow fadeInRightBig" data-wow-duration="1s">
+                            <img src="./image/icon_wz.png" alt="">
+                            <p>私募网站建立</p>
+                            <div>
+                                不同需求定制专业区块链官网 多种语言配置
+                            </div>
+                        </li>
+                        <li class="wow fadeInDownBig" data-wow-duration="1s">
+                            <img src="./image/icon_zlkf.png" alt="">
+                            <p>主链开发</p>
+                            <div>
+                                专注主链开发 根据客户需求定制主链发币
+                            </div>
+                        </li>
+                        <li class="wow fadeInDownBig" data-wow-duration="1s">
+                            <img src="./image/icon_jypt.png" alt="">
+                            <p>交易平台</p>
+                            <div>
+                                交易所自主发币服务 24小时专人运维 省去维护风险和麻烦
+                            </div>
+                        </li>
+                        <li class="wow fadeInLeftBig" data-wow-duration="1s">
+                            <img src="./image/icon_td.png" alt="">
+                            <p>专业技术团队</p>
+                            <div>
+                                根据客户实际情况进行开发 保证高效率高质量完成
+                            </div>
+                        </li>
+                        <li class="wow fadeInUpBig" data-wow-duration="1s">
+                            <img src="./image/icon_qklkf.png" alt="">
+                            <p>区块链应用及开发</p>
+                            <div>
+                                区块链落地应用可落地 客户可经营可配合发币
+                            </div>
+                        </li>
+                        <li class="wow fadeInRightBig" data-wow-duration="1s">
+                            <img src="./image/icon_dz.png" alt="">
+                            <p>程序及app定制</p>
+                            <div>
+                                根据客户需求开发相应程序 独家技术实力 市场独一无二
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section five">
+                <div class="five_head wow fadeInDownBig" data-wow-duration="1s">
+                    <p>区块链应用</p>
+                    了解行业最新动态，掌握实时资讯
+                </div>
+                <div class="five_main">
+                    <ul>
+                        <li class="five_head wow fadeInRightBig" data-wow-duration="1s">
+                            <img src="./image/icon_zf.png" alt="">
+                            <p>区块链跨境支付系统</p>
+                            <div>
+                                基于区块链技术，开发出商用物联网点对点支付系统，可实现加密代币实时支付，是基于区块链分布式清算模式的去中心化支付系统，可用于银行清算，支付公司结算等多场景的实际应用。
+                            </div>
+                        </li>
+                        <li class="five_head wow fadeInUpBig" data-wow-duration="1s">
+                            <img src="./image/icon_rg.png" alt="">
+                            <p>区块链溯源认购系统</p>
+                            <div>
+                                基于区块链技术，通过去中心化保证认购数量不可逆，并将商品溯源，通过将产品全上链，信息可查询，增加消费者信任度透明度。
+                            </div>
+                        </li>
+                        <li class="five_head wow  fadeInDownBig" data-wow-duration="1s">
+                            <img src="./image/icon_fbjys.png" alt="">
+                            <p>分布式交易所</p>
+                            <div>
+                                基于区块链底层技术开发，可开发出去中心化的分布式交易所，它的优点在于弥补目前交易所人为中心化作弊的风险。有资产透明度高，避免被盗，监管风险等优势，并可应用到多个行业。
+                            </div>
+                        </li>
+                        <li class="five_head wow fadeInLeftBig" data-wow-duration="1s">
+                            <img src="./image/icon_yjkf.png" alt="">
+                            <p>其他区块链开发及硬件开发</p>
+                            <div>
+                                有区块链养宠物系统，区块链物联网门锁系统，区块链彩票系统等多行业应用可定制，可根据客户需求定制区块链与硬件结合的产品。
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="section six">
+                <div class="six_head wow fadeInDownBig" data-wow-duration="1s">
+                    <p>我们的优势</p>
+                    专业性、创新性、增值性、综合性
+                </div>
+                <div class="six_main">
+                    <ul>
+                        <li class=" wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.2s">
+                            <img src="./image/zybj.png" alt="">
+                            <div class="li_h">
+                                <div>专业</div>
+                            </div>
+                            <div class="li_f">
+                                专注于区块链app的定制服务，用专业的态度为您提供最优的规则和运营方案。
+                            </div>
+                        </li>
+                        <li class=" wow fadeInDownBig" data-wow-duration="1s">
+                            <img src="./image/ptbj.png" alt="">
+                            <div class="li_h">
+                                <div>配套</div>
+                            </div>
+                            <div class="li_f">
+                                面向各行业领域，提供可配置企业级区块链云服务。
+                            </div>
+                        </li>
+                        <li class=" wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <img src="./image/jsbj.png" alt="">
+                            <div class="li_h">
+                                <div>技术</div>
+                            </div>
+                            <div class="li_f">
+                                公司专注技术开发，专注区块链行业开发，有多个主链落地产品开发经验。
+                            </div>
+                        </li>
+                        <li class=" wow  fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.4s">
+                            <img src="./image/chbj.png" alt="">
+                            <div class="li_h">
+                                <div>策划</div>
+                            </div>
+                            <div class="li_f">
+                                我们用精密的理论，精心的设计，严谨的开发，精确的实施，为客户提供满意的产品和服务。
+                            </div>
+                        </li>
+                        <li class=" wow fadeInUpBig" data-wow-duration="1s">
+                            <img src="./image/kshbj.png" alt="">
+                            <div class="li_h">
+                                <div>可视化</div>
+                            </div>
+                            <div class="li_f">
+                                从网络、系统、业务层面提供可视化的运营管理。
+                            </div>
+                        </li>
+                        <li class=" wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.3s">
+                            <img src="./image/zhxbj.png" alt="">
+                            <div class="li_h">
+                                <div>综合性</div>
+                            </div>
+                            <div class="li_f">
+                                一旦选择我们，您无需其他合作伙伴，交易所，钱包应用等一整套解决方案，凡是您想到的，我们都能做到。
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section seven">
+                <div class="seven_head wow fadeInDownBig" data-wow-duration="0.8s">
+                    <p>合作案例</p>
+                    为多家合作伙伴提供区块链应用落地，区块链商业生态建设等服务
+                </div>
+                <div class="seven_main wow fadeInUp" data-wow-duration="1s">
+                    <div>
+                        <div class="swiper-button-prev">
+                        </div>
+                        <div class="swiper-button-next">
+                        </div>
+                        <div class="swiper-container">
+
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="./page/case.html">
+                                        <img src="./image/bc.png" alt="">
+                                        <div>
+                                            <p>Coin Village</p>
+                                            币村交易所
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./page/case.html">
+                                        <img src="./image/lm_pay.png" alt="">
+                                        <div>
+                                            <p>LM PAY</p>
+                                            智能数字终端
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./page/case.html">
+                                        <img src="./image/gpos.png" alt="">
+                                        <div>
+                                            <p>GPOS</p>
+                                            全场景营销生态体系
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./page/case.html">
+                                        <img src="./image/scc.png" alt="">
+                                        <div>
+                                            <p>SCC</p>
+                                            银链资产
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./page/case.html">
+                                        <img src="./image/bett.png" alt="">
+                                        <div>
+                                            <p>BETT</p>
+                                            百特通
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section eight">
+                <div class="eight_head wow fadeInDownBig" data-wow-duration="1s">
+                    <div>
+                        <p>关于我们</p>
+                        专注产品研发，为客户提供区块链定制及服务
+                    </div>
+                </div>
+                <div class="eight_main">
+                    <div>
+                        <div class="left clearfix wow fadeInLeftBig" data-wow-duration="1s">
+                            <img src="./image/gywm.png" alt="">
+                        </div>
+                        <div class="right wow fadeInRightBig" data-wow-duration="1s">
+                            <div class="about_us">
+                                <div>
+                                    胖小虎网络科技有限公司是面向各行业领域,提供行业区块链运营产品,
+                                    满足商业场景中用户诉求;打造可用、易用的公共区块链网络.
+                                </div>
+                                <p>跨链服务</p>
+                                <p>同/异构区块链之间可相互操作及通信</p>
+                                <p>合约模板</p>
+                                <p>多语言合约共存,依据行业规则提供标准化合约模板</p>
+                                <p>隐私保护</p>
+                                <p>多种数据脱敏、加密和封锁方法、保护用户隐私</p>
+                                <p>共识机制</p>
+                                <p>DPos+BFT新算法,实现高交易吞吐量、可扩展和安全性</p>
+                                <a href="./page/aboutUs.html">查看更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="eight_foot">
+                    <div class="foot_main">
+                        <div class="foot_head">
+                            <div class="left">
+                                <a href="#page1">首页</a>/
+                                <a href="#page1">超级钱包</a>/
+                                <a href="#page1">方案</a>/
+                                <a href="#page1">解决方案</a>/
+                                <a href="#page1">应用</a>/
+                                <a href="#page1">优势</a>/
+                                <a href="#page1">合作方案</a>/
+                                <a href="#page1">关于我们</a>
+                            </div>
+                            <div class="right">
+                                <a href="#"><img src="./image/icon_wx.png" alt=""></a>
+                                <a href="#"><img src="./image/icon_qq.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="foot_f">
+                            <div class="left">
+                                <p>胖小虎科技有限公司©版权所有 EVERGRANDE GROUP</p>
+                                <P>备案号 : 鄂ICP01201234 版权所有 法律声明 技术支持</P>
+                                <p>400-117-5880</p>
+                            </div>
+                            <div class="right">
+                                <img src="./image/ewm.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="./assets/jquery.min.js"></script>
+<script src="./assets/bootstrap.min.js"></script>
+<script src="./assets/swiper.min.js"></script>
+<script src="./assets/particles.js"></script>
+<!-- <script src="./assets/wow.min.js"></script> -->
+<script src="./assets/1.js"></script>
+<script src="./assets/fullpage/jquery.fullPage.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/modernizr-2.8.3.min.js"></script>
+
+</html>
